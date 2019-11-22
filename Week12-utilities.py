@@ -67,3 +67,10 @@ def Union(list1, list2):
         else:
             final.append(value)
     return final
+
+def Intersection(uno, dos):
+    fin = []
+    for name in uno:
+        if name in dos:
+            fin.append(name)
+    return fin
