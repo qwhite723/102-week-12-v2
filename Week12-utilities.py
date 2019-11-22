@@ -57,3 +57,13 @@ def ScoreFinder(names, scores, name):
     else:
         print("OUTPUT player not found")
 
+def Union(list1, list2):
+    temp = list1 + list2
+    final = []
+    filler = 0
+    for value in temp:
+        if value in final:
+            filler += 1
+        else:
+            final.append(value)
+    return final
