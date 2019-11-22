@@ -5,3 +5,8 @@
 
 def PrintOutput(word):
     print("OUTPUT",word)
+
+def LoadFile(filename):
+    with open(filename, 'r') as file:
+        read = file.readlines()
+    return read
