@@ -20,3 +20,10 @@ def UpdateString(string1, string2, index):
     for let in one:
         RS += let
     return RS
+
+def FindWordCount(my_list, string):
+    count = 0
+    for value in my_list:
+        if value == string:
+            count += 1
+    return count
