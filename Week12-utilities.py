@@ -74,3 +74,13 @@ def Intersection(uno, dos):
         if name in dos:
             fin.append(name)
     return fin
+
+def NotIn(uno, dos):
+    finn = []
+    filler = 0
+    for name in uno:
+        if name in dos:
+            filler += 1
+        else:
+            finn.append(name)
+    return finn
